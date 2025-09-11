@@ -198,13 +198,13 @@
       "mscorlib.dll": "sha256-HYyp9hO+GKFyupcEiY1PxtBBXbHzefsO3Q8RiQTaNCA=",
       "netstandard.dll": "sha256-N5CcC3sLzGBesbmeJAp5bwxABN9u7SwkIO5qfFjzoik=",
       "System.Private.CoreLib.dll": "sha256-bJS1DJmhjP7PvegYG+Z8O9EDtRY78HKinA3LUMVLlSQ=",
-      "AdamVuePortfolio.dll": "sha256-qjA3AFGRrM1u3O7HTL3rRNxMeuE21WTPuVTNvvW3Bug="
+      "AdamVuePortfolio.dll": "sha256-fK4\/fHMNpVbWBIP5utqtHiFnjXIzswyUTqZzPlntQIE="
     },
     "extensions": null,
     "lazyAssembly": null,
     "libraryInitializers": null,
     "pdb": {
-      "AdamVuePortfolio.pdb": "sha256-82Bq5cyStlYduwgF+8Yy9D3WBuK1zSMi5H8v1k79DGQ="
+      "AdamVuePortfolio.pdb": "sha256-T1o7\/BVA51nVWBk1qGyypBt8zUYEfFHjE7I0FFGfmYw="
     },
     "runtime": {
       "dotnet.7.0.20.rvy0vcjmud.js": "sha256-eaJTmow4t8eE7FZMZR5Ja41JMOefGCbIYDTdpclGsac=",

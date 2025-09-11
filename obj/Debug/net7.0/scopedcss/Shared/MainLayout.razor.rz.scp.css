@@ -14,7 +14,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1rem;
+    gap: 1.5rem;
 }
 
 .mainLinks_icon[b-q609jikc7j] {
@@ -30,8 +30,8 @@
 
 .mainLinks_line[b-q609jikc7j] {
     width: 2px;
-    height: 10rem;
+    height: 7.5rem;
     background-color: currentColor;
     opacity: 1;
-    margin-top: 1rem;
+    margin-top: .75rem;
 }

@@ -1,6 +1,7 @@
 .about-section {
     font-family: 'Montserrat', sans-serif;
     color: #111;
+    padding: 0 0 10rem 0;
 }
 
 .about-content {
@@ -16,10 +17,12 @@
     text-align: left;
     line-height: 1.6;
     font-family: 'Montserrat', sans-serif;
+    max-width: 600px;
+    width: 100%;
 }
 
 .highlight-role {
-    color: rgba(255, 165, 0, 1); 
+    color: rgba(255, 97, 32, 1); 
     font-weight: 700; /* bold */
     font-family: 'Montserrat', sans-serif; 
     font-size: 1.2rem;
@@ -28,28 +31,42 @@
 
 .profile-container {
     position: relative; 
-    width: 180px;
-    height: 180px;
+    width: 280px;
+    height: 280px;
     flex-shrink: 0;
 }
 
 .profile-pic {
-    width: 180px;
-    height: 180px;
+    width: 280px;
+    height: 280px;
     border-radius: 50%; 
     object-fit: cover;
-    border: 3px solid rgba(255, 165, 0, 0.7); 
+    border: 3px outset rgba(103, 146, 103, 1); 
     position: relative; 
     z-index: 1;
 }
 
 .blur-circle {
     position: absolute;
-    top: -20px;       
-    left: -20px;     
-    width: 220px;     
-    height: 220px;
-    background: rgba(255, 165, 0, 0.3);     
+    top: -40px;       
+    left: -40px;     
+    width: 420px;     
+    height: 420px;
+    background: rgba(103, 146, 103, 1);
+   
+    border-radius: 50%;
+    filter: blur(40px);
+    z-index: 0;
+}
+
+.blur-circle2 {
+    position: absolute;
+    top: -402px;       
+    left: -402px;     
+    width: 420px;     
+    height: 420px;
+    background: rgb(179, 181, 14);
+   
     border-radius: 50%;
     filter: blur(40px);
     z-index: 0;
