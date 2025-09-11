@@ -817,8 +817,9 @@
 /Users/adamvue/PortfolioWebsite/AdamVuePortfolio/obj/Debug/net7.0/staticwebassets.pack.json
 /Users/adamvue/PortfolioWebsite/AdamVuePortfolio/obj/Debug/net7.0/staticwebassets.build.json
 /Users/adamvue/PortfolioWebsite/AdamVuePortfolio/obj/Debug/net7.0/staticwebassets.development.json
+/Users/adamvue/PortfolioWebsite/AdamVuePortfolio/obj/Debug/net7.0/scopedcss/Components/NavBar.razor.rz.scp.css
+/Users/adamvue/PortfolioWebsite/AdamVuePortfolio/obj/Debug/net7.0/scopedcss/Pages/Index.razor.rz.scp.css
 /Users/adamvue/PortfolioWebsite/AdamVuePortfolio/obj/Debug/net7.0/scopedcss/Shared/MainLayout.razor.rz.scp.css
-/Users/adamvue/PortfolioWebsite/AdamVuePortfolio/obj/Debug/net7.0/scopedcss/Shared/NavMenu.razor.rz.scp.css
 /Users/adamvue/PortfolioWebsite/AdamVuePortfolio/obj/Debug/net7.0/scopedcss/bundle/AdamVuePortfolio.styles.css
 /Users/adamvue/PortfolioWebsite/AdamVuePortfolio/obj/Debug/net7.0/scopedcss/projectbundle/AdamVuePortfolio.bundle.scp.css
 /Users/adamvue/PortfolioWebsite/AdamVuePortfolio/obj/Debug/net7.0/AdamVuePortfolio.csproj.CopyComplete
@@ -826,4 +827,7 @@
 /Users/adamvue/PortfolioWebsite/AdamVuePortfolio/obj/Debug/net7.0/refint/AdamVuePortfolio.dll
 /Users/adamvue/PortfolioWebsite/AdamVuePortfolio/obj/Debug/net7.0/AdamVuePortfolio.pdb
 /Users/adamvue/PortfolioWebsite/AdamVuePortfolio/obj/Debug/net7.0/ref/AdamVuePortfolio.dll
-/Users/adamvue/PortfolioWebsite/AdamVuePortfolio/obj/Debug/net7.0/scopedcss/Pages/Index.razor.rz.scp.css
+/Users/adamvue/PortfolioWebsite/AdamVuePortfolio/obj/Debug/net7.0/scopedcss/Components/About.razor.rz.scp.css
+/Users/adamvue/PortfolioWebsite/AdamVuePortfolio/obj/Debug/net7.0/scopedcss/Components/Projects.razor.rz.scp.css
+/Users/adamvue/PortfolioWebsite/AdamVuePortfolio/obj/Debug/net7.0/scopedcss/Components/Skills.razor.rz.scp.css
+/Users/adamvue/PortfolioWebsite/AdamVuePortfolio/obj/Debug/net7.0/scopedcss/Components/Experience.razor.rz.scp.css

@@ -1,0 +1,56 @@
+.about-section[b-h7kxegnjpm] {
+    font-family: 'Montserrat', sans-serif;
+    color: #111;
+}
+
+.about-content[b-h7kxegnjpm] {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 3rem;
+    margin-top: 2rem;
+}
+
+.about-text[b-h7kxegnjpm] {
+    flex: 1; 
+    text-align: left;
+    line-height: 1.6;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.highlight-role[b-h7kxegnjpm] {
+    color: rgba(255, 165, 0, 1); 
+    font-weight: 700; /* bold */
+    font-family: 'Montserrat', sans-serif; 
+    font-size: 1.2rem;
+    margin: 0.5rem 0 1rem 0;
+}
+
+.profile-container[b-h7kxegnjpm] {
+    position: relative; 
+    width: 180px;
+    height: 180px;
+    flex-shrink: 0;
+}
+
+.profile-pic[b-h7kxegnjpm] {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%; 
+    object-fit: cover;
+    border: 3px solid rgba(255, 165, 0, 0.7); 
+    position: relative; 
+    z-index: 1;
+}
+
+.blur-circle[b-h7kxegnjpm] {
+    position: absolute;
+    top: -20px;       
+    left: -20px;     
+    width: 220px;     
+    height: 220px;
+    background: rgba(255, 165, 0, 0.3);     
+    border-radius: 50%;
+    filter: blur(40px);
+    z-index: 0;
+}

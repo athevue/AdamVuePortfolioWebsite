@@ -1,14 +1,18 @@
 ﻿@inherits LayoutComponentBase
 
-<div class="page">
-    @* <div class="sidebar">
-        <NavMenu />
-    </div> *@
+<div class="mainLinks">
+    <a href="mailto:athevue@gmail.com" target="_blank" aria-label="email">
+        <img src="images/email.svg" class="mainLinks_icon" alt="Email" />
+    </a>
+    <a href="https://www.linkedin.com/in/adam-vue/" target="_blank" aria-label="linkedin">
+        <img src="images/linkedin.svg" class="mainLinks_icon" alt="LinkedIn" />
+    </a>
+    <a href="https://github.com/athevue" target="_blank" aria-label="github">
+        <img src="images/github.svg" class="mainLinks_icon" alt="GitHub" />
+    </a>
+    <div class="mainLinks_line"></div>
+</div>
 
-    <main>
-        
-        <article class="content px-4">
-            @Body
-        </article>
-    </main>
+<div class="page">
+    @Body
 </div>

@@ -1,0 +1,23 @@
+@inject IJSRuntime JS
+
+<nav class="navbar">
+    <h1 class="logo">
+        <a href="#" @onclick:preventDefault="true" @onclick="ScrollToTop">Adam Vue</a>
+    </h1>
+
+    <div class="nav-links">
+        <a @onclick="ScrollToAbout">About</a>
+        <a @onclick="ScrollToExperience">Experience</a>
+        <a @onclick="ScrollToProjects">Projects</a>
+        <a @onclick="ScrollToSkills">Skills</a>
+    </div>
+</nav>
+
+@code {
+
+    private async Task ScrollToTop() => await JS.InvokeVoidAsync("scrollToTop");
+    private async Task ScrollToAbout() => await JS.InvokeVoidAsync("scrollToSection", "about");
+    private async Task ScrollToExperience() => await JS.InvokeVoidAsync("scrollToSection", "experience");
+    private async Task ScrollToProjects() => await JS.InvokeVoidAsync("scrollToSection", "projects");
+    private async Task ScrollToSkills() => await JS.InvokeVoidAsync("scrollToSection", "skills");
+}

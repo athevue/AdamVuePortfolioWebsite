@@ -69,8 +69,28 @@
       "PackagePath": "staticwebassets/icon-192.png"
     },
     {
+      "Id": "/Users/adamvue/PortfolioWebsite/AdamVuePortfolio/wwwroot/images/email.svg",
+      "PackagePath": "staticwebassets/images/email.svg"
+    },
+    {
+      "Id": "/Users/adamvue/PortfolioWebsite/AdamVuePortfolio/wwwroot/images/github.svg",
+      "PackagePath": "staticwebassets/images/github.svg"
+    },
+    {
+      "Id": "/Users/adamvue/PortfolioWebsite/AdamVuePortfolio/wwwroot/images/linkedin.svg",
+      "PackagePath": "staticwebassets/images/linkedin.svg"
+    },
+    {
+      "Id": "/Users/adamvue/PortfolioWebsite/AdamVuePortfolio/wwwroot/images/me.jpeg",
+      "PackagePath": "staticwebassets/images/me.jpeg"
+    },
+    {
       "Id": "/Users/adamvue/PortfolioWebsite/AdamVuePortfolio/wwwroot/index.html",
       "PackagePath": "staticwebassets/index.html"
+    },
+    {
+      "Id": "/Users/adamvue/PortfolioWebsite/AdamVuePortfolio/wwwroot/js/scroll.js",
+      "PackagePath": "staticwebassets/js/scroll.js"
     },
     {
       "Id": "/Users/adamvue/PortfolioWebsite/AdamVuePortfolio/wwwroot/sample-data/weather.json",
