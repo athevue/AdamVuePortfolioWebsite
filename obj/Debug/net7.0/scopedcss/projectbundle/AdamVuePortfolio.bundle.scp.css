@@ -74,8 +74,30 @@
     z-index: 0;
 }
 /* /Components/Contact.razor.rz.scp.css */
-.contactArea[b-nqmlqj3sdo] {
-    
+.contact-section[b-nqmlqj3sdo] {
+    padding: 40px 0;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.contact-section .contactArea[b-nqmlqj3sdo] {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* space between links */
+    flex-wrap: wrap; /* stack on small screens */
+}
+
+.contact-section .contactArea a[b-nqmlqj3sdo] {
+    padding: 12px 24px;
+    color: #444;
+    text-decoration: none;
+    font-weight: 500;
+    border-radius: 6px;
+    transition: background-color 0.2s ease;
+}
+
+.contact-section .contactArea a:hover[b-nqmlqj3sdo] {
+    color: #868080 /* slight highlight on hover */
 }
 /* /Components/Experience.razor.rz.scp.css */
 /* /Components/ExperienceItem.razor.rz.scp.css */
@@ -151,7 +173,7 @@
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    gap: 7.5rem;
+    gap: 5.5rem;
     padding: 15px 0px 15px 0px;
     background-color: transparent;
     font-family: 'Montserrat', sans-serif;

@@ -1,3 +1,25 @@
-.contactArea {
-    
+.contact-section {
+    padding: 40px 0;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.contact-section .contactArea {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* space between links */
+    flex-wrap: wrap; /* stack on small screens */
+}
+
+.contact-section .contactArea a {
+    padding: 12px 24px;
+    color: #444;
+    text-decoration: none;
+    font-weight: 500;
+    border-radius: 6px;
+    transition: background-color 0.2s ease;
+}
+
+.contact-section .contactArea a:hover {
+    color: #868080 /* slight highlight on hover */
 }
