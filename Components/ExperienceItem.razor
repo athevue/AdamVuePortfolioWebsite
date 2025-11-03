@@ -1,0 +1,36 @@
+<div class="experience-item @(IsExpanded ? "expanded" : "")">
+    <div class="experience-header" @onclick="ToggleDetails">
+        <div class="company-role">
+            @if (!string.IsNullOrEmpty(CompanyLogoUrl))
+            {
+                <img src="@CompanyLogoUrl" alt="@CompanyName logo" class="company-logo" />
+            }
+            <div class="company-text">
+                <strong>@CompanyName</strong> — @Role
+            </div>
+        </div>
+        <div class="date">
+            @Date 
+            <span class="arrow">@((IsExpanded ? "▼" : "▶"))</span>
+        </div>
+    </div>
+
+    <div class="experience-details">
+        @ChildContent
+    </div>
+</div>
+
+@code {
+    [Parameter] public string CompanyName { get; set; } = string.Empty;
+    [Parameter] public string Role { get; set; } = string.Empty;
+    [Parameter] public string Date { get; set; } = string.Empty;
+    [Parameter] public string? CompanyLogoUrl { get; set; }  // New param for logo
+    [Parameter] public RenderFragment? ChildContent { get; set; }
+
+    private bool IsExpanded { get; set; } = false;
+
+    private void ToggleDetails()
+    {
+        IsExpanded = !IsExpanded;
+    }
+}

@@ -6,11 +6,15 @@
     </h1>
 
     <div class="nav-links">
-        <a @onclick="ScrollToAbout">About</a>
+        @* <a @onclick="ScrollToAbout">About</a> *@
         <a @onclick="ScrollToExperience">Experience</a>
         <a @onclick="ScrollToProjects">Projects</a>
-        <a @onclick="ScrollToSkills">Skills</a>
+        @* <a @onclick="ScrollToSkills">Skills</a> *@
+        <a @onclick="ScrollToContact">Contact</a>
+        <a>Resume</a>
+
     </div>
+    
 </nav>
 
 @code {
@@ -20,4 +24,6 @@
     private async Task ScrollToExperience() => await JS.InvokeVoidAsync("scrollToSection", "experience");
     private async Task ScrollToProjects() => await JS.InvokeVoidAsync("scrollToSection", "projects");
     private async Task ScrollToSkills() => await JS.InvokeVoidAsync("scrollToSection", "skills");
+    private async Task ScrollToContact() => await JS.InvokeVoidAsync("scrollToSection", "contact");
+
 }

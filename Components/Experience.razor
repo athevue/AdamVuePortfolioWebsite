@@ -1,11 +1,41 @@
+@using Microsoft.AspNetCore.Components
+@using Microsoft.AspNetCore.Components.Web
+@using AdamVuePortfolio.Components
+
 <section id="experience" class="about-section">
-    <h2>Experience</h2>
-    <p>
-        Hi
-    </p>
+    
+<section id="experience" class="about-section">
+    <div>
+        <h1>Experience</h1>
+    </div>
+
+    <ExperienceItem 
+    CompanyName="Wayne State University" 
+    Role="C&IT Project Management Intern" 
+    Date="March 2025 - Present"
+    CompanyLogoUrl="images/WSULogo.png">
+        <p>
+            Worked on developing internal tools using C# and Blazor.
+            Implemented automation scripts to streamline processes.
+        </p>
+    </ExperienceItem>
+
+    <ExperienceItem 
+    CompanyName="Tyler Technologies" 
+    Role="Software Development Intern" 
+    Date="May 2025 - August 2025"
+    CompanyLogoUrl="images/TylerLogo.png">
+        <p>
+            Assisted with backend support and database management.
+            Built internal dashboards to monitor system metrics.
+        </p>
+    </ExperienceItem>
+</section>
 </section>
 
-<style>
-    
 
-</style>
+
+
+@code {
+  
+}

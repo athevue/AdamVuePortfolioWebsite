@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Xp+VSNO02UHJQsGjt3VoNhG3+Ly9YJUDqrjHJxA1S+g=",
+  "Hash": "E/hTJyht8Q8Hx8EG59N33iw2FHTqWInyXC6pGyve9EM=",
   "Source": "AdamVuePortfolio",
   "BasePath": "/",
   "Mode": "Root",
@@ -7208,6 +7208,40 @@
       "OriginalItemSpec": "wwwroot/images/me.jpeg"
     },
     {
+      "Identity": "/Users/adamvue/PortfolioWebsite/AdamVuePortfolio/wwwroot/images/TylerLogo.png",
+      "SourceId": "AdamVuePortfolio",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/adamvue/PortfolioWebsite/AdamVuePortfolio/wwwroot/",
+      "BasePath": "/",
+      "RelativePath": "images/TylerLogo.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/images/TylerLogo.png"
+    },
+    {
+      "Identity": "/Users/adamvue/PortfolioWebsite/AdamVuePortfolio/wwwroot/images/WSULogo.png",
+      "SourceId": "AdamVuePortfolio",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/adamvue/PortfolioWebsite/AdamVuePortfolio/wwwroot/",
+      "BasePath": "/",
+      "RelativePath": "images/WSULogo.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/images/WSULogo.png"
+    },
+    {
       "Identity": "/Users/adamvue/PortfolioWebsite/AdamVuePortfolio/wwwroot/index.html",
       "SourceId": "AdamVuePortfolio",
       "SourceType": "Discovered",
@@ -7240,23 +7274,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/js/scroll.js"
-    },
-    {
-      "Identity": "/Users/adamvue/PortfolioWebsite/AdamVuePortfolio/wwwroot/sample-data/weather.json",
-      "SourceId": "AdamVuePortfolio",
-      "SourceType": "Discovered",
-      "ContentRoot": "/Users/adamvue/PortfolioWebsite/AdamVuePortfolio/wwwroot/",
-      "BasePath": "/",
-      "RelativePath": "sample-data/weather.json",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/sample-data/weather.json"
     }
   ]
 }

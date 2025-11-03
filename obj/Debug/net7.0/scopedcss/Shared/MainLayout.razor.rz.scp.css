@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0 8rem; /* space for sidebar */
     min-height: 100vh;
-    background-color: white;
+    background-color: #FBF6F1;
     position: relative;
 }
 
@@ -29,9 +29,27 @@
 }
 
 .mainLinks_line[b-q609jikc7j] {
-    width: 2px;
+    width: 2.75px;
     height: 7.5rem;
     background-color: currentColor;
     opacity: 1;
     margin-top: .75rem;
+}
+
+.profile-container[b-q609jikc7j] {
+    position: relative;
+}
+
+.profile-pic[b-q609jikc7j] {
+    position: absolute; /* makes top/right work */
+    top: 0;
+    right: 0;
+    width: 400px;
+    height: 600px;
+    /* max-width: 70vw;
+    max-height: 60vh; */
+    object-fit: cover;
+    border-bottom-left-radius: 50rem;
+    z-index: 1; /* behind other content */
+    pointer-events: none; /* optional: allow clicks through image */
 }

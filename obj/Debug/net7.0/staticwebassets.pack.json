@@ -69,6 +69,14 @@
       "PackagePath": "staticwebassets/icon-192.png"
     },
     {
+      "Id": "/Users/adamvue/PortfolioWebsite/AdamVuePortfolio/wwwroot/images/TylerLogo.png",
+      "PackagePath": "staticwebassets/images/TylerLogo.png"
+    },
+    {
+      "Id": "/Users/adamvue/PortfolioWebsite/AdamVuePortfolio/wwwroot/images/WSULogo.png",
+      "PackagePath": "staticwebassets/images/WSULogo.png"
+    },
+    {
       "Id": "/Users/adamvue/PortfolioWebsite/AdamVuePortfolio/wwwroot/images/email.svg",
       "PackagePath": "staticwebassets/images/email.svg"
     },
@@ -91,10 +99,6 @@
     {
       "Id": "/Users/adamvue/PortfolioWebsite/AdamVuePortfolio/wwwroot/js/scroll.js",
       "PackagePath": "staticwebassets/js/scroll.js"
-    },
-    {
-      "Id": "/Users/adamvue/PortfolioWebsite/AdamVuePortfolio/wwwroot/sample-data/weather.json",
-      "PackagePath": "staticwebassets/sample-data/weather.json"
     },
     {
       "Id": "obj/Debug/net7.0/staticwebassets/msbuild.AdamVuePortfolio.Microsoft.AspNetCore.StaticWebAssets.props",
