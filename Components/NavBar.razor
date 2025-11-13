@@ -5,25 +5,29 @@
         <a href="#" @onclick:preventDefault="true" @onclick="ScrollToTop">Adam Vue</a>
     </h1>
 
-    <div class="nav-links">
-        @* <a @onclick="ScrollToAbout">About</a> *@
+    <!-- Mobile Menu Toggle -->
+    <div class="menu-toggle" @onclick="ToggleMenu">
+        @(isMenuOpen ? "Close" : "Menu")
+    </div>
+
+    <!-- Links -->
+    <div class="nav-links @(isMenuOpen ? "open" : "")">
         <a @onclick="ScrollToExperience">Experience</a>
         <a @onclick="ScrollToProjects">Projects</a>
-        @* <a @onclick="ScrollToSkills">Skills</a> *@
         <a @onclick="ScrollToContact">Contact</a>
         <a>Resume</a>
-
     </div>
-    
 </nav>
 
 @code {
+    private bool isMenuOpen = false;
 
-    private async Task ScrollToTop() => await JS.InvokeVoidAsync("scrollToTop");
-    private async Task ScrollToAbout() => await JS.InvokeVoidAsync("scrollToSection", "about");
-    private async Task ScrollToExperience() => await JS.InvokeVoidAsync("scrollToSection", "experience");
-    private async Task ScrollToProjects() => await JS.InvokeVoidAsync("scrollToSection", "projects");
-    private async Task ScrollToSkills() => await JS.InvokeVoidAsync("scrollToSection", "skills");
-    private async Task ScrollToContact() => await JS.InvokeVoidAsync("scrollToSection", "contact");
+    private void ToggleMenu() => isMenuOpen = !isMenuOpen;
 
+    private async Task ScrollToTop() { await JS.InvokeVoidAsync("scrollToTop"); CloseMenu(); }
+    private async Task ScrollToExperience() { await JS.InvokeVoidAsync("scrollToSection", "experience"); CloseMenu(); }
+    private async Task ScrollToProjects() { await JS.InvokeVoidAsync("scrollToSection", "projects"); CloseMenu(); }
+    private async Task ScrollToContact() { await JS.InvokeVoidAsync("scrollToSection", "contact"); CloseMenu(); }
+
+    private void CloseMenu() => isMenuOpen = false;
 }

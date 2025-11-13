@@ -2,40 +2,126 @@
 @using Microsoft.AspNetCore.Components.Web
 @using AdamVuePortfolio.Components
 
-<section id="experience" class="about-section">
+<section id="experience" class="experience-section">
     
-<section id="experience" class="about-section">
-    <div>
-        <h1>Experience</h1>
+    <h1>Experience</h1>
+    
+
+    <ExperienceItem 
+        CompanyName="C&IT Project Management Intern" 
+        Role="Wayne State University: Detroit, MI" 
+        Date="March 2025 - Present"
+        CompanyLogoUrl="images/WSULogo.png">
+        <ul>
+            <li>Audited 990+ projects monthly and delivered reports to leadership/stakeholders.</li>
+            <li>Supported application evaluation for the WSU VDI Project.</li>
+            <li>Improved campus security data by auditing access for 133+ buildings.</li>
+            <li>Enhanced PMDB with Power Apps, Power Automate, and Power BI dashboards for monitoring project health.</li>
+            <li>Created digital marketing materials using Adobe Express for security awareness.</li>
+        </ul>
+        <a href="https://tech.wayne.edu/" target="_blank" rel="noopener noreferrer">Check them out!</a>
+    </ExperienceItem>
+
+    <ExperienceItem 
+        CompanyName="Software Development Intern" 
+        Role="Tyler Technologies: Troy, MI" 
+        Date="May 2025 - August 2025"
+        CompanyLogoUrl="images/TylerLogo.png">
+        <ul>
+            <li>Built MyApprovals, full-stack web application using Blazor .NET, C#, HTML, CSS, and JavaScript to streamline secure approval workflows.</li>
+            <li>Integrated with New World ERP APIs and managed data in SQL Server.</li>
+            <li>Collaborated with product owners to align features with business needs.</li>
+            <li>Implemented Tyler’s Forge UI for ADA-compliant, consistent UX.</li>
+            <li>Contributed actively to Agile sprints and team demos.</li>
+        </ul>
+        <a href="https://www.tylertech.com/" target="_blank" rel="noopener noreferrer">Check them out!</a>
+    </ExperienceItem>
+
+    @* Infinite Photo Scroller below experience *@
+    <div class="photo-scroller">
+        <div class="scroller-track">
+            @foreach (var img in Images)
+            {
+                <div class="scroller-item">
+                    <img src="@img" alt="Photo" oncontextmenu="return false;" draggable="false"/>
+                </div>
+            }
+            @* Duplicate for smooth loop *@
+            @foreach (var img in Images)
+            {
+                <div class="scroller-item">
+                    <img src="@img" alt="Photo" />
+                </div>
+            }
+        </div>
     </div>
-
-    <ExperienceItem 
-    CompanyName="Wayne State University" 
-    Role="C&IT Project Management Intern" 
-    Date="March 2025 - Present"
-    CompanyLogoUrl="images/WSULogo.png">
-        <p>
-            Worked on developing internal tools using C# and Blazor.
-            Implemented automation scripts to streamline processes.
-        </p>
-    </ExperienceItem>
-
-    <ExperienceItem 
-    CompanyName="Tyler Technologies" 
-    Role="Software Development Intern" 
-    Date="May 2025 - August 2025"
-    CompanyLogoUrl="images/TylerLogo.png">
-        <p>
-            Assisted with backend support and database management.
-            Built internal dashboards to monitor system metrics.
-        </p>
-    </ExperienceItem>
-</section>
 </section>
 
+<style>
+.photo-scroller {
+    overflow: hidden;
+    width: 100%;
+    margin: 2rem 0;
+}
 
+.scroller-track {
+    display: flex;
+    animation: scrollLeft 30s linear infinite;
+}
 
+.scroller-item {
+    flex: 0 0 auto;
+    margin-right: 20px;
+}
+
+.scroller-item img {
+    height: 150px;
+    width: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+/* Infinite scroll */
+@@keyframes scrollLeft {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}
+
+/* Optional: pause on hover */
+.photo-scroller:hover .scroller-track {
+    animation-play-state: paused;
+}
+
+/* Media query for large screens */
+@@media (min-width: 1400px) {
+    .experience-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* center content horizontally */
+        padding: 3rem 2rem;
+    }
+
+    .experience-section h1 {
+        text-align: center; /* center heading */
+    }
+
+    .photo-scroller {
+        max-width: 1200px; /* constrain the scroller width */
+    }
+
+    .scroller-track {
+        justify-content: center; /* center the images inside the scroller */
+    }
+}
+</style>
 
 @code {
-  
+    private string[] Images = new string[]
+    {
+        "images/collage/fun.jpeg",
+        "images/collage/gang.jpeg",
+        "images/collage/olympics.jpeg",
+        "images/collage/self.jpeg",
+        "images/collage/setup.jpeg"
+    };
 }

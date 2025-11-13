@@ -1,6 +1,6 @@
 .page[b-q609jikc7j] {
     margin: 0;
-    padding: 0 8rem; /* space for sidebar */
+    padding: 0 8rem; 
     min-height: 100vh;
     background-color: #FBF6F1;
     position: relative;
@@ -41,15 +41,47 @@
 }
 
 .profile-pic[b-q609jikc7j] {
-    position: absolute; /* makes top/right work */
+    position: absolute;
     top: 0;
     right: 0;
-    width: 400px;
-    height: 600px;
-    /* max-width: 70vw;
-    max-height: 60vh; */
+    width: 28vw;           
+    height: 650vw;          
+    max-height: 70vh;    
+    max-width: 25vw;
     object-fit: cover;
     border-bottom-left-radius: 50rem;
-    z-index: 1; /* behind other content */
-    pointer-events: none; /* optional: allow clicks through image */
+    z-index: 1;
+    pointer-events: none;
+}
+
+
+/* highlight text */
+[b-q609jikc7j]::selection {
+    background-color:rgba(255, 204, 0, 0.4); 
+}
+
+@media (max-width: 768px) {
+    .page[b-q609jikc7j] {
+        padding: 0 2rem; /* reduces left + right space */
+    }
+    .mainLinks[b-q609jikc7j]{
+        display: none;
+        gap: none;
+    }
+
+}
+
+@media (max-width: 425px){
+    .profile-pic[b-q609jikc7j] {
+        width: 40vw;
+        height: 52vw;
+    }
+}
+
+
+@media (min-width: 1400px){
+    .profile-pic[b-q609jikc7j] {
+        width: 40vw;
+        max-height: 55vh;    /* caps height on large screens */
+    }
 }

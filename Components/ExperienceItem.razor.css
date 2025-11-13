@@ -1,64 +1,166 @@
+/* EXPERIENCE SECTION */
+.experience-section {
+    padding: 20px 40px;
+    max-width: 900px; /* optional max width */
+    margin: 0 auto; /* center on large screens */
+}
+
+/* EXPERIENCE ITEM */
 .experience-item {
+    width: 100%;
     border-radius: 12px;
     margin: 10px 0;
     box-shadow: 0 2px 6px rgba(0,0,0,0.1);
     overflow: hidden;
-    transition: all 0.6s ease;
+    transition: box-shadow 0.3s ease;
+    box-sizing: border-box;
 }
 
+.experience-item.expanded {
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+/* HEADER */
 .experience-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 12px 16px;
-    font-size: 1.1rem;
+    padding: 14px 18px;
+    font-size: 1.05rem;
     cursor: pointer;
-    background-color: #f9f2f2;
-    transition: background-color 0.2s;
+    background-color: #ffffff;
+    transition: transform 0.2s, opacity 0.2s;
 }
 
 .experience-header:hover {
-    background-color: #ecdede;
+    background-color: rgba(255, 204, 0, 0.4);
+    transform: scale(1.005);
+    opacity: 0.8;
 }
 
-.experience-details {
-    max-height: 0;
-    overflow: hidden;
-    padding: 0 16px;
-    font-size: 0.95rem;
-    color: #555;
-    transition: max-height 0.3s ease, padding 0.3s ease;
-}
-
-.experience-item.expanded .experience-details {
-    max-height: 500px; /* adjust if needed */
-    padding: 12px 16px;
-}
-
-.arrow {
-    margin-left: 8px;
-    font-size: 0.9rem;
-    transition: transform 0.6s ease;
-}
-
-.experience-item.expanded .arrow {
-    transform: rotate(180deg);
-}
-
+/* COMPANY INFO */
 .company-role {
     display: flex;
     align-items: center;
 }
 
 .company-logo {
-    width: 40px;
-    height: 40px;
+    width: 42px;
+    height: 42px;
     border-radius: 8px;
-    margin-right: 12px;
+    margin-right: 14px;
     object-fit: cover;
 }
 
 .company-text {
     display: flex;
     flex-direction: column;
+    line-height: 1.2;
 }
+
+.company-text span {
+    font-weight: 400;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+/* DATE & ARROW */
+.date {
+    display: flex;
+    align-items: center;
+    font-size: 0.95rem;
+}
+
+.arrow {
+    display: inline-block;
+    margin-left: 8px;
+    font-size: 1rem;
+    transition: transform 0.35s ease;
+}
+
+.experience-item.expanded .arrow {
+    transform: rotate(90deg);
+}
+
+/* DETAILS */
+.experience-details {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    padding: 0 18px;
+    font-size: 0.95rem;
+    color: #555;
+    transition: max-height 0.45s ease, opacity 0.35s ease, padding 0.35s ease;
+}
+
+.experience-item.expanded .experience-details {
+    max-height: 1000px; /* enough for longer content */
+    opacity: 1;
+    padding: 12px 18px 18px;
+}
+
+/* --- RESPONSIVE --- */
+
+/* Tablets */
+@media (max-width: 768px) {
+    .experience-section {
+        padding: 15px 20px;
+    }
+
+    .experience-item {
+        margin: 8px 0;
+    }
+
+    .experience-header {
+        padding: 12px 14px;
+    }
+
+    .company-logo {
+        width: 36px;
+        height: 36px;
+        margin-right: 10px;
+    }
+
+    .company-text span {
+        font-size: 0.85rem;
+    }
+
+    .experience-details {
+        font-size: 0.9rem;
+    }
+}
+
+/* Small phones */
+@media (max-width: 480px) {
+    .experience-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 6px;
+    }
+
+    .date {
+        align-self: flex-end;
+        font-size: 0.85rem;
+    }
+
+    .arrow {
+        font-size: 0.85rem;
+    }
+}
+
+/* Large screens (wide monitors) */
+@media (min-width: 1400px) {
+    .experience-section {
+        max-width: 1400px;   /* constrain width on very wide screens */
+    }
+
+    .experience-item {
+        max-width: 1000px;   /* constrain individual items */
+        margin: 12px auto;   /* center each item */
+    }
+
+    .experience-header {
+        justify-content: space-between; /* keep original spacing inside item */
+    }
+}
+

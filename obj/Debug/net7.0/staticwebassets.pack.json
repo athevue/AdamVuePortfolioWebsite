@@ -69,12 +69,44 @@
       "PackagePath": "staticwebassets/icon-192.png"
     },
     {
+      "Id": "/Users/adamvue/PortfolioWebsite/AdamVuePortfolio/wwwroot/images/AVlogo.png",
+      "PackagePath": "staticwebassets/images/AVlogo.png"
+    },
+    {
       "Id": "/Users/adamvue/PortfolioWebsite/AdamVuePortfolio/wwwroot/images/TylerLogo.png",
       "PackagePath": "staticwebassets/images/TylerLogo.png"
     },
     {
       "Id": "/Users/adamvue/PortfolioWebsite/AdamVuePortfolio/wwwroot/images/WSULogo.png",
       "PackagePath": "staticwebassets/images/WSULogo.png"
+    },
+    {
+      "Id": "/Users/adamvue/PortfolioWebsite/AdamVuePortfolio/wwwroot/images/collage/fun.jpeg",
+      "PackagePath": "staticwebassets/images/collage/fun.jpeg"
+    },
+    {
+      "Id": "/Users/adamvue/PortfolioWebsite/AdamVuePortfolio/wwwroot/images/collage/gang.jpeg",
+      "PackagePath": "staticwebassets/images/collage/gang.jpeg"
+    },
+    {
+      "Id": "/Users/adamvue/PortfolioWebsite/AdamVuePortfolio/wwwroot/images/collage/group.jpeg",
+      "PackagePath": "staticwebassets/images/collage/group.jpeg"
+    },
+    {
+      "Id": "/Users/adamvue/PortfolioWebsite/AdamVuePortfolio/wwwroot/images/collage/olympics.jpeg",
+      "PackagePath": "staticwebassets/images/collage/olympics.jpeg"
+    },
+    {
+      "Id": "/Users/adamvue/PortfolioWebsite/AdamVuePortfolio/wwwroot/images/collage/self.jpeg",
+      "PackagePath": "staticwebassets/images/collage/self.jpeg"
+    },
+    {
+      "Id": "/Users/adamvue/PortfolioWebsite/AdamVuePortfolio/wwwroot/images/collage/setup.jpeg",
+      "PackagePath": "staticwebassets/images/collage/setup.jpeg"
+    },
+    {
+      "Id": "/Users/adamvue/PortfolioWebsite/AdamVuePortfolio/wwwroot/images/collage/win.jpeg",
+      "PackagePath": "staticwebassets/images/collage/win.jpeg"
     },
     {
       "Id": "/Users/adamvue/PortfolioWebsite/AdamVuePortfolio/wwwroot/images/email.svg",
@@ -85,12 +117,20 @@
       "PackagePath": "staticwebassets/images/github.svg"
     },
     {
+      "Id": "/Users/adamvue/PortfolioWebsite/AdamVuePortfolio/wwwroot/images/gmail.svg",
+      "PackagePath": "staticwebassets/images/gmail.svg"
+    },
+    {
       "Id": "/Users/adamvue/PortfolioWebsite/AdamVuePortfolio/wwwroot/images/linkedin.svg",
       "PackagePath": "staticwebassets/images/linkedin.svg"
     },
     {
       "Id": "/Users/adamvue/PortfolioWebsite/AdamVuePortfolio/wwwroot/images/me.jpeg",
       "PackagePath": "staticwebassets/images/me.jpeg"
+    },
+    {
+      "Id": "/Users/adamvue/PortfolioWebsite/AdamVuePortfolio/wwwroot/images/python.png",
+      "PackagePath": "staticwebassets/images/python.png"
     },
     {
       "Id": "/Users/adamvue/PortfolioWebsite/AdamVuePortfolio/wwwroot/index.html",

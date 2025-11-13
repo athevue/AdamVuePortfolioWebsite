@@ -1,25 +1,102 @@
 .contact-section[b-nqmlqj3sdo] {
-    padding: 40px 0;
-    text-align: center;
-    font-family: 'Montserrat', sans-serif;
-}
-
-.contact-section .contactArea[b-nqmlqj3sdo] {
     display: flex;
-    justify-content: center;
-    gap: 20px; /* space between links */
-    flex-wrap: wrap; /* stack on small screens */
+    justify-content: center; 
+    align-items: center;    
+    padding-bottom: 3rem;
 }
 
-.contact-section .contactArea a[b-nqmlqj3sdo] {
-    padding: 12px 24px;
-    color: #444;
+.contact-card-inner[b-nqmlqj3sdo] {
+    display: flex;
+    align-items: center;
+    background: #fff;
+    border-radius: 12px;
+    padding: 20px 25px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    max-width: 500px;
+    width: 100%;
+    gap: 20px;
+    border-bottom: rgba(255, 204, 0, 0.4) 4px solid;
+}
+
+.contact-photo[b-nqmlqj3sdo] {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.contact-info h3[b-nqmlqj3sdo] {
+    margin: 0;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #222;
+}
+
+.contact-info p[b-nqmlqj3sdo] {
+    margin: 4px 0 12px 0;
+    font-size: 0.95rem;
+    color: #555;
+}
+
+.contact-links[b-nqmlqj3sdo] {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.contact-links a.highlight-link[b-nqmlqj3sdo] {
+    position: relative;
+    display: inline-block;
+    color: inherit;
     text-decoration: none;
+    cursor: pointer;
+    font-size: 1rem;
     font-weight: 500;
-    border-radius: 6px;
-    transition: background-color 0.2s ease;
+    z-index: 1; /* Makes text appear above highlight */
 }
 
-.contact-section .contactArea a:hover[b-nqmlqj3sdo] {
-    color: #868080 /* slight highlight on hover */
+.contact-links a.highlight-link[b-nqmlqj3sdo]::before {
+    content: "";
+    position: absolute;
+    bottom: 0.15em; 
+    left: 50%;
+    transform: translateX(-50%) scaleX(0);
+    transform-origin: center;
+    width: 100%;
+    height: 0.8em;
+    background: rgba(255, 204, 0, 0.4);
+    opacity: 0.5;
+    border-radius: 0.2em;
+    z-index: -1; /* Puts highlight behind text */
+    transition: transform 0.35s ease, opacity 0.35s ease;
+}
+
+.contact-links a.highlight-link:hover[b-nqmlqj3sdo]::before {
+    transform: translateX(-50%) scaleX(1);
+    opacity: 0.85;
+}
+
+
+.contact-links a img[b-nqmlqj3sdo] {
+    width: 18px;
+    height: 18px;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+    .contact-card-inner[b-nqmlqj3sdo] {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .contact-links[b-nqmlqj3sdo] {
+        align-items: center;
+    }
+}
+
+@media (min-width:1400px){
+    .contact-section[b-nqmlqj3sdo]{
+        padding-bottom: 7.5rem;
+    }
 }

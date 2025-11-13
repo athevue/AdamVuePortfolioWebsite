@@ -20,10 +20,6 @@ build_property._RazorSourceGeneratorDebug =
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/adamvue/PortfolioWebsite/AdamVuePortfolio/Pages/Test.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXMvVGVzdC5yYXpvcg==
-build_metadata.AdditionalFiles.CssScope = 
-
 [/Users/adamvue/PortfolioWebsite/AdamVuePortfolio/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
@@ -47,6 +43,10 @@ build_metadata.AdditionalFiles.CssScope = b-3amjxd6eb6
 [/Users/adamvue/PortfolioWebsite/AdamVuePortfolio/Components/NavBar.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9OYXZCYXIucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-qs80rblrux
+
+[/Users/adamvue/PortfolioWebsite/AdamVuePortfolio/Components/ProjectCard.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9Qcm9qZWN0Q2FyZC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-zpau9nbxc2
 
 [/Users/adamvue/PortfolioWebsite/AdamVuePortfolio/Components/Projects.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9Qcm9qZWN0cy5yYXpvcg==

@@ -833,3 +833,4 @@
 /Users/adamvue/PortfolioWebsite/AdamVuePortfolio/obj/Debug/net7.0/scopedcss/Components/Experience.razor.rz.scp.css
 /Users/adamvue/PortfolioWebsite/AdamVuePortfolio/obj/Debug/net7.0/scopedcss/Components/Contact.razor.rz.scp.css
 /Users/adamvue/PortfolioWebsite/AdamVuePortfolio/obj/Debug/net7.0/scopedcss/Components/ExperienceItem.razor.rz.scp.css
+/Users/adamvue/PortfolioWebsite/AdamVuePortfolio/obj/Debug/net7.0/scopedcss/Components/ProjectCard.razor.rz.scp.css

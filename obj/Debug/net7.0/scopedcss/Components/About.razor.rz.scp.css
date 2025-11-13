@@ -1,3 +1,4 @@
+
 .about-section[b-h7kxegnjpm] {
     font-family: 'Montserrat', sans-serif; 
     color: #111;
@@ -23,52 +24,65 @@
 }
 
 .highlight-role[b-h7kxegnjpm] {
-    color: rgba(255, 97, 32, 1); 
+    color: #0c7d37; /* lighter green */
     font-weight: 700; /* bold */
-    font-family: 'Montserrat', sans-serif; 
-    font-size: 1.2rem;
+    font-family: "Cherry Cream Soda", system-ui;
+    font-size: 2.5rem;
     margin: 0.5rem 0 1rem 0;
 }
 
-/* .profile-container {
-    position: relative;
-    width: 280px;
-    height: 280px;
-    flex-shrink: 0;
-    border: 3px outset rgba(103, 146, 103, 1); 
-    box-shadow: 0 8px 20px rgba(0,0,0,0.25);
-}
 
-.profile-pic {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; 
-    object-position: 82% 15%; 
-    display: block;
-    transition: transform 0.3s ease;
-} */
+#name[b-h7kxegnjpm] {
+    font-family: "Edu NSW ACT Cursive", cursive;
+    color: rgba(255, 204, 0, 0.88);                           
+    font-size: 1.75rem;                           
+    font-weight: 500;                            
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);    /
+}
 
 
 .blur-circle[b-h7kxegnjpm] {
     position: absolute;
-    top: -40px;       
-    left: -40px;     
-    width: 420px;     
-    height: 420px;
-    background: rgba(103, 146, 103, 0.75);
+    top: 35%;               
+    right: -150px;          /* push to the right side */
+    width: 320px;
+    height: 320px;
+    background: rgba(139, 190, 139, 0.889);
     border-radius: 50%;
-    filter: blur(100px);
+    opacity: 70%;
+    filter: blur(150px);
+    transform: translateY(-50%); /* center vertically */
     z-index: 0;
+    pointer-events: none;
+
 }
 
 .blur-circle2[b-h7kxegnjpm] {
     position: absolute;
     bottom: 150px;       
-    left: -100px;   /* shifted left */
+    left: -150px;   /* shifted left */
     width: 400px;     
     height: 400px;
     background: rgba(255, 183, 77, 0.3);
     border-radius: 50%;
-    filter: blur(200px);
+    filter: blur(169px);
     z-index: 0;
+    pointer-events: none;
+
+}
+
+/* Media query for large screens */
+@media (min-width: 1400px) {
+    .about-section[b-h7kxegnjpm] {
+        display: flex;
+        justify-content: center; /* center horizontally */
+        padding: 0 2rem 5rem 2rem; /* optional: add horizontal padding */
+    }
+
+    .about-content[b-h7kxegnjpm] {
+        justify-content: center; /* center content instead of space-between */
+        max-width: 1200px; /* limits how wide the content stretches */
+        width: 100%;
+    }
 }

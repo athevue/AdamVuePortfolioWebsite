@@ -1,10 +1,22 @@
+@using AdamVuePortfolio.Components;
+
 <section id="projects" class="projects-section">
-    <h2>Projects</h2>
-    <p>
-        Hi yoooooooo
-    </p>
+    <h1>Featured Projects</h1>
+    <div class="projects-grid">
+    <ProjectCard 
+        Title="Warrior Thrones"
+        Description="Rating web application for WSU bathrooms."
+        ImageUrl="images/WSULogo.png"
+        LiveUrl="https://live-project.com"
+        CodeUrl="https://github.com/athevue/WarriorThrones.git" />
+
+    <ProjectCard 
+        Title="Automatic Desktop Cleaner"
+        Description="A Python tool that automatically organizes files on your desktop by type."
+        ImageUrl="images/python.png"
+        LiveUrl="https://live-project.com"
+        CodeUrl="https://github.com/athevue/AutomaticDesktopCleaner.git" />
+
+    </div>
 </section>
 
-<style>
-
-</style>

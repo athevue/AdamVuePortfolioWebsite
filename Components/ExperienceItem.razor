@@ -6,12 +6,14 @@
                 <img src="@CompanyLogoUrl" alt="@CompanyName logo" class="company-logo" />
             }
             <div class="company-text">
-                <strong>@CompanyName</strong> — @Role
+                <strong>@CompanyName</strong>
+                <span>@Role</span>
             </div>
         </div>
+
         <div class="date">
-            @Date 
-            <span class="arrow">@((IsExpanded ? "▼" : "▶"))</span>
+            @Date
+            <span class="arrow">▶</span>
         </div>
     </div>
 
@@ -20,14 +22,15 @@
     </div>
 </div>
 
+
 @code {
     [Parameter] public string CompanyName { get; set; } = string.Empty;
     [Parameter] public string Role { get; set; } = string.Empty;
     [Parameter] public string Date { get; set; } = string.Empty;
-    [Parameter] public string? CompanyLogoUrl { get; set; }  // New param for logo
+    [Parameter] public string? CompanyLogoUrl { get; set; }
     [Parameter] public RenderFragment? ChildContent { get; set; }
 
-    private bool IsExpanded { get; set; } = false;
+    private bool IsExpanded { get; set; }
 
     private void ToggleDetails()
     {
